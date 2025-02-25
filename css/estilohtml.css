@@ -1,0 +1,773 @@
+/*----------------ESTILOS DE LA PAGINA--------------*/
+body {
+    background: rgba(9, 9, 9, 0.97);
+    font-family: 'Roboto Mono', sans-serif;
+    margin: 0px;
+}
+
+header {
+    /*background: linear-gradient(white, rgba(0, 0, 0, 0.9),red);*/
+    /*background: (white, rgba(0, 0, 0, 0.9),red);*/
+    background: linear-gradient(red, black,black);
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1px;
+}
+
+nav {
+    /*box-shadow: 0px 0px 8px 1px black inset;*/
+    border-color: black;   
+    border-radius: 2px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+section {
+    padding: 5px 85px 5px 85px;
+    color: dimgray;
+    margin-top: 4px;
+}
+
+article {
+    box-shadow: 0px 0px 15px 1px black inset;
+    border-color: black;
+    background: rgba(0,0,0,0.9);
+    padding: 9px;
+    border-radius: 10px;
+}
+
+article p {
+    margin: 5px;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+.contenido {
+    text-align: left;
+}
+
+.contenido h2 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 10px;
+    color: antiquewhite;
+}
+
+.contenido img {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 1px 10px 1px 0px;
+    float: left;
+    width: 35%;
+    height: auto;   
+}
+
+.prox{
+    text-align: center;
+    font-size: 30px;
+}
+
+.imagenn{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.cabecera {
+    padding: 20px;
+    display: flex;
+    height: 110px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.uniondepor {
+    display: flex;
+    align-items: center;
+    margin-bottom: -25px;
+    margin-left: 5px;
+}
+
+.uniondepor span {
+    color: lightgray;
+    font-family: 'Black Ops One', cursive;
+    /*font-family: candara;
+    /*font-family: 'Luminari';*/
+    text-shadow: 2px -5px 15px rgb(209, 8, 8);
+    font-size-adjust: auto;
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.logounion {
+    padding-right: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: -25px;
+    /*margin-top: 10px;*/  
+}
+
+.logounion img{
+    width: 75px;
+    height: 80px;
+}
+
+.logopelota {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.logopelota img{
+    margin-right: 12px;
+    width: 36px;
+    height: 36px;
+}
+
+.redes {    
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 1px black;
+}
+
+.redes a {
+    text-decoration: none;
+    color: rgba(205, 205, 205, 0.9);
+    font-size: 25px;
+}
+
+.redes a:hover {
+    color: #b80000;
+    text-shadow: 0px 0px 20px gray;
+}
+
+.autor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto Mono';
+    font-size: 10px;
+}
+
+.autor2 {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: white;
+    font-family: monospace;
+}
+
+.autor a {
+    text-decoration: none;
+    color: #b80000;
+    font-family: monospace;
+    font-weight: bold;
+    text-shadow: 1px -2px 2px black;
+    font-size: 13px;
+}
+
+.autor a:hover {
+    color: whitesmoke;
+    text-shadow: 3px 0px 16px gray;
+}
+
+.imagenfondo {   
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+}
+
+.fondo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.espacioblanco p{
+   margin-bottom: 240px;
+}
+
+.espacioblanco2 p{
+   margin-bottom: 310px;
+}
+
+.final {
+   display: flexbox;
+   margin-top: auto;
+}
+
+.bienvenida{   
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(205, 205, 205, 0.9);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+/*------------------------FIN---------------------------*/
+
+
+/*-----------------MOSTRAR-OCULTAR(DIV)---------------------*/
+
+.mostrarocultar h2{
+    font-size:18px;
+    letter-spacing: 2px;
+}
+
+/*-------------------ESTILOS NAVEGADOR(MENU)-----------------*/
+.navegador{
+    z-index:2;
+}
+
+.navegador a{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+.navegador ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.navegador ul ul{
+    display: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    
+}
+
+.menu li a:hover{
+    color: #b80000;
+    text-shadow: 0px 0px 20px white;
+}
+
+/*submenu estilo y ocultar*/
+.menu li ul{    
+    background-color: rgba(0, 0, 0, 0.95);  
+    padding: 5px 0px 5px 5px;
+    border-radius: 20px;
+    width: auto;  
+}
+
+/*submenu estilo*/
+.menu li ul a{
+    text-decoration: none; 
+    display: block;
+    padding: 8px;
+}
+
+/* desplegar submenu*/
+.navegador ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+
+/*----------------Responsive--------------*/
+#btn-menu{
+    display:none;
+}
+
+.navegador label{   
+    color: white;
+    display: none;
+    width: 18px;
+    height: 18px;
+    padding: 10px;
+    margin: 0px 0px 0px 5px;
+    font-size: 18px;
+}
+
+.navegador label:hover{
+    cursor: pointer;
+    color: #b80000;
+    text-shadow: 3px 0px 16px white;
+}
+/*--------------------------FIN-------------------------*/
+
+
+/*----------------------SLIDER IMAGENES CON SWIPER--------------------*/
+.swiper-container{
+      border-radius: 10px;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: rgba(255, 236, 0, 0.25);
+}
+
+.swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 180px;
+      height: 180px;
+}
+
+.enlace{
+    width: 180px;
+    height: 180px;
+}
+
+.enlace a{
+    display: block; 
+    width: 100%; 
+    height: 100%;
+}
+/*--------------------------FIN-------------------------*/
+
+
+/*-------------------------ESTILO FORMULARIO CONTACTO------------------*/
+
+form{
+    width: 400px;
+    margin: auto;
+    background: rgba(125,125,125,0.25);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+}
+
+input, textarea{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 6px;
+    box-sizing: border-box;
+    font-size: 14px;  
+    color: gray;
+    border-color: #b80000;
+    resize: none;
+}
+
+textarea{
+    min-height: 150px;
+    max-height: 250px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #b80000;
+    color:black;
+    border-radius: 100px;
+    width: 50%;
+}
+
+#boton:hover{
+    cursor: pointer;
+    background: #b80000;
+}
+
+.datos{ 
+    border-radius: 6px;
+    text-align: center;
+}
+
+.datos h2{
+    color:white;
+    font-size: 20px;
+}
+
+.datos h2 span{
+    color:#b80000;
+    text-shadow: 2px -1px 3px black;
+}
+
+.datos a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.datos a:hover {
+    color: white;
+    text-shadow: 3px 0px 16px red;
+}
+
+.datos ul{
+    list-style: none;
+    list-style-type: none;
+    padding-left: 0px;
+    align-items: center;
+}
+
+.contenedordatos{
+    background: rgba(125,125,125,0.25);
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.formulario{
+    border-radius: 6px;
+    text-align: center;
+}
+
+.formulario h2{
+    font-size: 16px;
+    color: white;
+}
+
+/*-----------------------FIN------------------------------------*/
+
+/*-----------------------CONDICIOLANES------------------*/
+
+@media (max-width: 1200px){
+   .espacioblanco p{
+      margin-bottom: 180px;
+   }
+
+   .espacioblanco2 p{
+      margin-bottom: 260px;
+   }
+    
+}
+
+@media (max-width: 1024px){
+.espacioblanco p{
+      margin-bottom: 100px;
+   }
+
+  .espacioblanco2 p{
+      margin-bottom: 190px;
+    }   
+}
+
+@media (max-width: 820px){
+    .espacioblanco p{
+     margin-bottom: 0px;
+   }
+
+     .espacioblanco2 p{
+   margin-bottom: 100px;
+    }
+
+    .uniondepor span {
+    font-size: 30px;
+    font-weight: bold;    
+    }    
+    
+}
+
+@media (max-width: 740px) {
+
+    section {
+        padding: 6px;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .uniondepor span {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .swiper-slide {
+      width: 140px;
+      height: 140px;
+    }
+    
+    .enlace{
+    width: 140px;
+    height: 140px;
+    }
+    
+    .espacioblanco2 p{
+   margin-bottom: 130px;
+   }
+    
+    .redes a {
+        font-size: 22px;
+    } 
+}
+
+@media (max-width: 680px) {
+
+    .menu {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        margin-left: -250%;
+        transition: all 0.3s;
+    }
+
+    .menu li {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .menu li ul {
+        background-color: rgba(0, 0, 0, 0.81);
+        color: gray;
+        border-radius: 10px;
+        padding: 0px 0px 0px 0px;
+        width: 145%;
+    }
+
+    .menu ul a {
+        color: dimgrey;
+    }
+
+    .navegador ul li:hover ul {
+        display: none;
+        position: static;
+    }
+
+    .navegador ul {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 10px;
+        padding: 10px 100px 10px 5px;
+    }
+
+    .navegador label {
+        display: block;
+    }
+
+    .fondo {
+        height: auto;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+    
+    .uniondepor span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .autor, .autor2{
+        font-size: 10px;
+    }
+    
+    .autor a{
+        font-size: 11px;
+    }
+    
+    .contenido img {
+      width: 50%;
+      height: auto;   
+    }
+    
+    .espacioblanco2 p{
+      margin-bottom: 180px;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 5px;
+    }
+    
+    .logounion img{
+      width: 65px;
+      height: 70px;
+    }
+
+}
+
+@media(max-width: 600px) {
+  .espacioblanco2 p{
+     margin-bottom: 130px;
+   }
+
+  .redes a{
+        font-size: 20;
+    }
+    
+   .uniondepor span {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+   .logopelota img{
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    }
+
+    .cabecera{
+        height: 70px;
+    }
+
+    .logounion img{
+        width: 50px;
+        height: 55px;
+      }
+    
+}
+
+@media(max-width: 500px) {
+    .uniondepor span {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    
+    .redes a {
+        font-size: 18px;
+    } 
+    
+    .uniondepor {
+        justify-content: flex-start;
+    }
+    
+    .cabecera{
+        height: 50px;
+    }
+    
+    .fondo img {
+     width: 100%;
+     height: 330px;
+    }
+    
+    .logounion img{
+      width: 45px;
+      height: 50px;
+    }
+    
+    .espacioblanco2 p{
+      margin-bottom: 0px;
+    }
+    
+    article{
+        font-size: 16px;
+        background: rgba(0,0,0,0.95);
+    }
+    
+    form{
+        width: 100%;
+    }
+    
+    video{
+       width: 100%;
+       height: auto;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .autor, .autor2{
+        font-size: 8px;
+    }
+    
+    .autor a{
+        font-size: 10px;
+    }
+    
+    .uniondepor span {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: -10px;
+    }
+
+    .redes a {
+        font-size: 16px;
+    }
+
+    .bienvenida {
+        font-size: 6px;
+        margin-top: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .mostrarocultar img{
+    width: 140px;
+    height: 140px;
+    }
+    
+    .contenido img {
+      width: 100%;
+      height: auto;   
+    }
+    
+    .fondo img {
+     width: 100%;
+     height: 250px;
+    }
+    
+    video{
+       width: 100%;
+       height: 200px;
+    }
+    
+    .logopelota img{
+    margin-right: 20px;
+    width: 18px;
+    height: 18px;
+    }
+    
+    .logounion img{
+      width: 40px;
+      height: 45px;
+    }
+}
+    
+
+@media(max-width: 340px) {
+    
+   .uniondepor span {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: -5px;
+    } 
+    
+    .uniondepor {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+     }
+    
+    video{
+
+    width: 100%;
+    height: auto;
+    }
+ 
+    .logounion img{
+      width: 30px;
+      height: 35px;
+     }
+    
+    .logounion {
+    padding-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;  
+     }
+
+     .logopelota img{
+        margin-right: 2px;
+     }
+    
+}
+    
+/*--------------------------FIN-------------------------*/
